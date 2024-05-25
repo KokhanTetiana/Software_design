@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid bisque;
+            border-radius: 5px;
+            background-color: beige;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid ghostwhite;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Оберіть вашу підписку</h1>
+<form action="process_subscription.php" method="post">
+    <label for="subscriptionType">Тип підписки:</label>
+    <select name="subscriptionType" id="subscriptionType">
+        <option value="domestic">Domestic</option>
+        <option value="educational">Educational</option>
+        <option value="premium">Premium</option>
+    </select><br><br>
+
+    <label for="purchaseMethod">Метод створення:</label>
+    <select name="purchaseMethod" id="purchaseMethod">
+        <option value="website">WebSite</option>
+        <option value="mobileApp">MobileApp</option>
+        <option value="managerCall">ManagerCall</option>
+    </select><br><br>
+
+    <input type="submit" value="Далі">
+</form>
+</body>
+</html>
