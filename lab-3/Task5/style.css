@@ -1,0 +1,16 @@
+.my-table {
+    border-collapse: collapse;
+}
+
+.my-table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.my-table tr:hover {
+    background-color: lightgray;
+}
+
+.my-table td {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
